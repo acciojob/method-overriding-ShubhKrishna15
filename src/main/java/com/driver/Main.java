@@ -7,19 +7,25 @@ public class Main {
         obj.meth();
 
     }
+
+    public static class A{
+        String meth(){
+            return "Invoking method from class A";
+        }
+    }
+
+    public static class B extends A{
+        @Override
+
+        String meth(){
+            return "Method is overridden in Extendend class B";
+        }
+
+    }
+
+
+
+
+
   
-}
-class A{
-    String meth(){
-        return "Invoking method from class A";
-    }
-}
-
-class B extends A{
-    @Override
-
-    String meth(){
-        return "Method is overridden in Extendend class B";
-    }
-
 }
