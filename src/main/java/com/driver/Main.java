@@ -6,6 +6,10 @@ public class Main {
         B obj = new B();
         obj.meth();
 
+        B obj1 = new B();
+        obj.meth();
+        //System.out.println(obj.meth());
+
     }
 
     public static class A{
